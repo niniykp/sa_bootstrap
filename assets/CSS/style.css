@@ -1,3 +1,112 @@
 #logo{
     max-width: 100%;
 }
+
+/* Footer da página */
+.footer{
+    display: flex;
+    background-color: #5a0394;
+}
+
+.container{
+    color: white;
+    padding: 20px;
+    display: flex;
+    gap: 250px;
+}
+
+.logo{
+   width: 200px;
+   align-items: center;
+}
+
+.paginas{
+    display: grid;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.paginas ul{
+    list-style-type: none;
+    padding: 0; 
+}
+
+.paginas a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; 
+    font-size: 20px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.social-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.social-icons a img{
+    filter: invert(1);
+    width: 70px;
+}
+
+ /* Seção Quem-Somos */
+
+ .section-quemsomos{
+    display: grid;
+    justify-content: center;
+ }
+
+ .card-body{
+    padding-left: 10px;
+    background-color: rgb(252, 250, 250);
+    border-radius: 10px;
+    width: 800px;
+    margin: 20px;
+ }
+
+ .card-body hr{
+    width: 779px;
+ }
+
+ .card-body p{
+    color: rgb(75, 70, 70);
+ }
+
+ .card-body li{
+    color: rgb(75, 70, 70);
+ }
+
+ .card-title{
+    padding: 5px;
+    color: #e737f7;
+ }
+
+ .card-text{
+    color: rgb(75, 70, 70);
+ }
+
+ .btn{
+    background-color: #e390eb;
+    font-weight: bolder;
+ }
+
+  .btn:hover{
+    background-color: #cdf737;
+    font-weight: bolder;
+ }
+
+
