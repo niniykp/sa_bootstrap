@@ -1,3 +1,29 @@
-#logo{
-    max-width: 100%;
+.logo {
+  height: 100px;   /* tamanho da logo */
+  width: auto;    /* mantém proporção */
+}
+
+.navbar {
+  padding: 10px 30px; /* um espacinho mais elegante */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  margin: 0 10px; /* separa os links */
+  color: #5a0394
+}
+
+.navbar-nav .nav-link.active {
+  color: #8b00f6;
+  font-weight: bold;
+}
+
+
+#carouselExampleIndicators{
+    margin: 0 auto;
 }
