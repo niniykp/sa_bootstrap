@@ -1,3 +1,224 @@
-#logo{
-    max-width: 100%;
+/* =========================
+   IMPORTS E BASE
+========================= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f5fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#logo {
+  max-width: 100%;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 12px 40px;
+}
+
+.navbar-brand span {
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  color: #6f42c1;
+  font-weight: 500;
+  margin: 0 8px;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #4b1c9a;
+  text-decoration: underline;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.breadcrumb {
+  background: transparent;
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+
+.breadcrumb-item a {
+  color: #6f42c1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.breadcrumb-item a:hover {
+  color: #4b1c9a;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #5a0394;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   FILTROS
+========================= */
+.filter-wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(111, 66, 193, 0.1);
+}
+
+.form-select {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 6px rgba(111, 66, 193, 0.3);
+}
+
+.btn-primary {
+  background-color: #6f42c1 !important;
+  border: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4b1c9a !important;
+  transform: scale(1.05);
+}
+
+/* =========================
+   CARDS DE PETS
+========================= */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 4px solid #6f42c1;
+}
+
+.card-body h5 {
+  color: #4b1c9a;
+}
+
+.card-body p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Botão nos cards */
+.card .btn-outline-primary {
+  border-color: #6f42c1;
+  color: #6f42c1;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card .btn-outline-primary:hover {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+/* =========================
+   SEÇÃO POR QUE ADOTAR
+========================= */
+#porque-adotar {
+  background-color: #fff;
+  border-top: 4px solid #6f42c1;
+}
+
+#porque-adotar .card {
+  background-color: #fefaff;
+}
+
+#porque-adotar .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+}
+
+#porque-adotar .card-title {
+  color: #6f42c1;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+  background-color: #fff;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .filter-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary {
+    padding: 8px 12px;
+  }
+
+  .filter-wrapper {
+    border-radius: 15px;
+  }
 }
