@@ -71,9 +71,9 @@
             <div class="card h-100 shadow-sm border-0">
               <img src="assets/img/cachorro4.jpg" class="card-img-top" alt="Cachorro Bicolor." />
               <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Snow</h5>
+                <h5 class="card-title fw-bold">Toddy</h5>
                 <p class="text-muted">Juiz de Fora, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pingoModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#toddyModal">
                   Mais detalhes
                 </button>
               </div>
@@ -97,11 +97,11 @@
           <!-- Bibi -->
           <div class="col-sm-6 col-md-4">
             <div class="card h-100 shadow-sm border-0">
-              <img src="assets/img/cachorro6.jpg" class="card-img-top" alt="Cachorra preta" />
+              <img src="assets/img/cachorro6.jpg" class="card-img-top" alt="Cachorra." />
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Bibi</h5>
                 <p class="text-muted">Montes Claros, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ninaModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bibiModal">
                   Mais detalhes
                 </button>
               </div>
@@ -116,7 +116,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Frajola</h5>
                 <p class="text-muted">Uberlândia, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#lunaModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#frajolaModal">
                   Mais detalhes
                 </button>
               </div>
@@ -130,7 +130,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Salém</h5>
                 <p class="text-muted">Juiz de Fora, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tomModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#salemModal">
                   Mais detalhes
                 </button>
               </div>
@@ -144,7 +144,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Apolo</h5>
                 <p class="text-muted">Governador Valadares, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mimiModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#apoloModal">
                   Mais detalhes
                 </button>
               </div>
@@ -158,7 +158,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Theo</h5>
                 <p class="text-muted">Ribeirão das Neves, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tigerModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#theoModal">
                   Mais detalhes
                 </button>
               </div>
@@ -168,11 +168,11 @@
           <!-- Piter -->
           <div class="col-sm-6 col-md-4">
             <div class="card h-100 shadow-sm border-0">
-              <img src="assets/img/gato5.jpg" class="card-img-top" alt="Gata branca com olhos azuis" />
+              <img src="assets/img/gato5.jpg" class="card-img-top" alt="Gato branco com olhos azuis" />
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Piter</h5>
                 <p class="text-muted">Belo Horizonte, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#snowModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#piterModal">
                   Mais detalhes
                 </button>
               </div>
@@ -186,7 +186,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Zé Matheus</h5>
                 <p class="text-muted">Uberlândia, MG</p>
-                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#garfieldModal">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#zeMatheusModal">
                   Mais detalhes
                 </button>
               </div>
@@ -197,15 +197,19 @@
     </section>
 
     <!-- ==================== 🐾 MODAIS DE DETALHES ==================== -->
-
+    
     <!-- CACHORROS -->
-     <div class="modal fade" id="rexModal" tabindex="-1">
+    <!-- CACHORROS -->
+    <div class="modal fade" id="rexModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Rex</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Rex</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 3 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Porte:</strong> Médio</p>
             <p><strong>Temperamento:</strong> Brincalhão e leal</p>
             <p>Rex é um cachorro dócil e cheio de energia! Adora correr e brincar, perfeito para famílias ativas.</p>
@@ -214,29 +218,34 @@
       </div>
     </div>
 
-    <div class="modal fade" id="lolaModal" tabindex="-1">
+    <div class="modal fade" id="lolaModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Lola</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Lola</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Fêmea</p>
             <p><strong>Idade:</strong> 2 anos</p>
+            <p><strong>Sexo:</strong> Fêmea</p>
             <p><strong>Porte:</strong> Pequeno</p>
             <p><strong>Temperamento:</strong> Amorosa e tranquila</p>
-            <p>Lola é uma cachorrinha carinhosa que adora colo e atenção. Ideal para apartamentos e famílias calmas.</p>
+            <p>Lola é carinhosa e adora colo. Ideal para apartamentos e famílias calmas.</p>
           </div>
         </div>
       </div>
     </div>
 
-    
-    <div class="modal fade" id="thorModal" tabindex="-1">
+    <div class="modal fade" id="thorModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Thor</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Thor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 4 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Porte:</strong> Grande</p>
             <p><strong>Temperamento:</strong> Protetor e fiel</p>
             <p>Thor é um grandão do bem! Gosta de companhia e é ótimo com crianças.</p>
@@ -245,13 +254,16 @@
       </div>
     </div>
 
-    <div class="modal fade" id="toddyModal" tabindex="-1">
+    <div class="modal fade" id="toddyModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Toddy</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Toddy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 6 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Porte:</strong> Grande</p>
             <p><strong>Temperamento:</strong> Alegre e brincalhão</p>
             <p>Toddy é cheio de energia e vai te arrancar sorrisos todos os dias!</p>
@@ -260,13 +272,16 @@
       </div>
     </div>
 
-    <div class="modal fade" id="maxModal" tabindex="-1">
+    <div class="modal fade" id="maxModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Max</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Max</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 5 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Porte:</strong> Grande</p>
             <p><strong>Temperamento:</strong> Calmo e obediente</p>
             <p>Max é um labrador amoroso e super dócil, ótimo companheiro para qualquer ambiente.</p>
@@ -275,107 +290,109 @@
       </div>
     </div>
 
-    <div class="modal fade" id="bibiModal" tabindex="-1">
+    <div class="modal fade" id="bibiModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Bibi</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header">
+            <h5 class="modal-title">Bibi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Fêmea</p>
             <p><strong>Idade:</strong> 3 anos</p>
+            <p><strong>Sexo:</strong> Fêmea</p>
             <p><strong>Porte:</strong> Médio</p>
             <p><strong>Temperamento:</strong> Inteligente e protetora</p>
-            <p>Bibi é uma pastora alemã muito esperta e leal, ideal para quem busca segurança e afeto.</p>
+            <p>Bibi é uma cachorrinha muito esperta e leal, ideal para quem busca segurança e afeto.</p>
           </div>
         </div>
       </div>
     </div>
 
-
     <!-- GATOS -->
-    <div class="modal fade" id="frajolaModal" tabindex="-1">
+     <div class="modal fade" id="frajolaModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header"><h5 class="modal-title">Frajola</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 2 anos</p>
-            <p><strong>Temperamento:</strong> Carinhoso e tranquilo</p>
-            <p>Frajola adora cochilar no sol e receber carinhos. Ideal para ambientes calmos e aconchegantes.</p>
+            <p><strong>Sexo:</strong> Macho</p>
+            <p><strong>Temperamento:</strong> Brincalhão e curioso</p>
+            <p>Frajola é cheio de energia e adora caçar brinquedos. Perfeito para quem quer um gato ativo e carinhoso!</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="salemModal" tabindex="-1">
+    <div class="modal fade" id="salemModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Salém</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-header"><h5 class="modal-title">Salem</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
           <div class="modal-body">
+            <p><strong>Idade:</strong> 3 anos</p>
             <p><strong>Sexo:</strong> Macho</p>
-            <p><strong>Idade:</strong> 1 ano e meio</p>
-            <p><strong>Temperamento:</strong> Brincalhão e curioso</p>
-            <p>Salém é um gatinho esperto que adora brincar com bolinhas e se esconder nas caixas.</p>
+            <p><strong>Temperamento:</strong> Calmo e observador</p>
+            <p>Salem é um gato tranquilo, adora lugares silenciosos e gosta de observar tudo ao redor.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="apoloModal" tabindex="-1">
+    <div class="modal fade" id="apoloModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header"><h5 class="modal-title">Apolo</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
           <div class="modal-body">
+            <p><strong>Idade:</strong> 1 ano</p>
             <p><strong>Sexo:</strong> Macho</p>
-            <p><strong>Idade:</strong> 3 anos</p>
-            <p><strong>Temperamento:</strong> Meigo e observador</p>
-            <p>Apolo é um gatinho calmo que adora observar tudo ao seu redor e receber carinho no seu tempo.</p>
+            <p><strong>Temperamento:</strong> Amoroso e brincalhão</p>
+            <p>Apolo é um filhote cheio de vida, adora carinho e está sempre pronto para brincar.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="theoModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header"><h5 class="modal-title">Theo</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-          <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
-            <p><strong>Idade:</strong> 4 anos</p>
-            <p><strong>Temperamento:</strong> Independente e tranquilo</p>
-            <p>Theo é um gato rajado que adora liberdade e se adapta bem a lares com quintal.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="piterModal" tabindex="-1">
+    <div class="modal fade" id="piterModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header"><h5 class="modal-title">Piter</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
           <div class="modal-body">
+            <p><strong>Idade:</strong> 4 anos</p>
             <p><strong>Sexo:</strong> Macho</p>
-            <p><strong>Idade:</strong> 2 anos</p>
-            <p><strong>Temperamento:</strong> Doce e calmo</p>
-            <p>Piter é uma gatinho carinhoso, com olhar sereno e ideal para quem busca companhia tranquila.</p>
+            <p><strong>Temperamento:</strong> Sociável e carinhoso</p>
+            <p>Piter adora estar entre pessoas e outros animais. É um ótimo companheiro para famílias.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="zeMatheusModal" tabindex="-1">
+    <div class="modal fade" id="theoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Theo</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+          <div class="modal-body">
+            <p><strong>Idade:</strong> 2 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
+            <p><strong>Temperamento:</strong> Carinhoso e curioso</p>
+            <p>Theo ama se aconchegar no colo e está sempre explorando o ambiente com curiosidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="zeMatheusModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header"><h5 class="modal-title">Zé Matheus</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
           <div class="modal-body">
-            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Idade:</strong> 5 anos</p>
+            <p><strong>Sexo:</strong> Macho</p>
             <p><strong>Temperamento:</strong> Preguiçoso e engraçado</p>
             <p>Zé Matheus é o típico gato tranquilo que ama comer e dormir. Perfeito para quem quer um parceiro relaxado!</p>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- SEÇÃO POR QUE ADOTAR -->
     <section id="porque-adotar" class="py-5">
       <div class="container text-center">
