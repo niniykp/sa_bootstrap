@@ -1,12 +1,19 @@
-/* ======= CONFIGURAÇÃO GERAL ======= */
+
+
 body {
   background-color: #f6f6f6;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+    font-family: "Poppins", sans-serif;
+  background-color: #f7f5fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-/* ======= NAVBAR ======= */
+
 .navbar {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -172,5 +179,70 @@ main {
   .form-check.form-check-inline {
     display: block;
     margin-bottom: 10px;
+
+
+
+
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 4px solid #6f42c1;
+}
+
+.card-body h5 {
+  color: #4b1c9a;
+}
+
+.card-body p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Botão nos cards */
+.card .btn-outline-primary {
+  border-color: #6f42c1;
+  color: #6f42c1;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card .btn-outline-primary:hover {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+
+#porque-adotar {
+  background-color: #fff;
+  border-top: 4px solid #6f42c1;
+}
+
+#porque-adotar .card {
+  background-color: #fefaff;
+}
+
+#porque-adotar .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+}
+
+#porque-adotar .card-title {
+  color: #6f42c1;
+}
+
+
   }
 }
