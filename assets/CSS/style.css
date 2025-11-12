@@ -1,30 +1,131 @@
-.logo {
-  height: 100px;   /* tamanho da logo */
-  width: auto;    /* mantém proporção */
+/* ======= CONFIGURAÇÃO GERAL ======= */
+body {
+  background-color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* ======= NAVBAR ======= */
 .navbar {
-  padding: 10px 30px; /* um espacinho mais elegante */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  color: #000;
+.logo {
+  width: 120px;
 }
 
-.navbar-nav .nav-link {
-  font-size: 1.1rem;
-  margin: 0 10px; /* separa os links */
-  color: #5a0394
+/* ======= FORMULÁRIO ======= */
+main {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.navbar-nav .nav-link.active {
-  color: #8b00f6;
-  font-weight: bold;
+.formulario-adocao {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px; /* evita que fique achatado */
+}
+
+.formulario-adocao label {
+  font-weight: 500;
+}
+
+.formulario-adocao input,
+.formulario-adocao select {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.formulario-adocao .form-check {
+  margin-right: 20px;
+  padding-left: 0;
+}
+
+.formulario-adocao .btn {
+  width: 100%;
+  background-color: #9400ff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+
+.formulario-adocao .btn:hover {
+  background-color: #7b00d6;
+}
+
+/* ======= RODAPÉ ======= */
+.footer {
+  background-color: #9400ff;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-footer img {
+  width: 120px;
+}
+
+.paginas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.paginas ul li {
+  margin: 5px 0;
+}
+
+.paginas ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.paginas ul li a:hover {
+  text-decoration: underline;
+}
+
+.redes-sociais img {
+  width: 30px;
+  margin: 0 8px;
 }
 
 
-#carouselExampleIndicators{
-    margin: 0 auto;
+@media (max-width: 768px) {
+  .formulario-adocao {
+    padding: 25px;
+    max-width: 95%;
+  }
 
+  .form-row .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .formulario-adocao .btn {
+    font-size: 16px;
+  }
+
+  .form-check.form-check-inline {
+    display: block;
+    margin-bottom: 10px;
+  }
 }

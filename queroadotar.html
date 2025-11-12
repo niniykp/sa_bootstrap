@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quero adotar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/img/MiAudota.png"
+            alt="Logo do MiAudota"
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Animais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Quero Adotar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex justify-content-center">
+      <form class="formulario-adocao w-50">
+        <div class="form-row row">
+          <div class="form-group col-md-12">
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" class="form-control" id="nome_completo" />
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="idade">Idade:</label>
+            <input type="number" class="form-control" id="idade" />
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" id="cpf" />
+          </div>
+
+          <div class="form-group col-md-5">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefone"
+              placeholder="(31) 90000-0000"
+            />
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="endereco_completo">Endereço Completo:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="endereco_completo"
+              placeholder="Rua Rosa 177"
+            />
+          </div>
+
+          <div class="mb-3">
+            <br />
+            <label class="form-label">Situação de Trabalho:</label>
+            <br />
+            <div class="form-check form-check-inline mb-1 p-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="situacao_empregado"
+              />
+              <label class="form-check-label small" for="situacao_empregado"
+                >Empregado</label
+              >
+            </div>
+
+            <div class="form-check form-check-inline mb-1 p-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="situacao_desempregado"
+              />
+              <label class="form-check-label small" for="situacao_desempregado"
+                >Desempregado</label
+              >
+            </div>
+
+            <div class="form-check form-check-inline mb-1 p-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="situacao_autonomo"
+              />
+              <label class="form-check-label small" for="situacao_autonomo"
+                >Autônomo</label
+              >
+            </div>
+
+            <div class="form-check form-check-inline mb-1 p-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="situacao_estudante"
+              />
+              <label class="form-check-label small" for="situacao_estudante"
+                >Estudante</label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Cadastrar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="logo-footer">
+          <img
+            src="assets/img/MiAudotabranco.png"
+            alt="Logo MiAudota"
+            class="logo-footer"
+          />
+        </div>
+
+        <div class="paginas">
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Animais</a></li>
+            <li><a href="#">Quero Adotar</a></li>
+          </ul>
+        </div>
+
+        <div class="redes-sociais">
+          <p>Siga nossas redes sociais!</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="assets/img/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#"><img src="assets/img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="assets/img/x.png" alt="X" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
