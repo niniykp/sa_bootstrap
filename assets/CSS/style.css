@@ -92,6 +92,10 @@ main {
   width: 120px;
 }
 
+.paginas{
+  text-align: left;
+}
+
 .paginas ul {
   list-style: none;
   padding: 0;
@@ -111,11 +115,12 @@ main {
 }
 
 .redes-sociais img {
-  width: 30px;
+  width: 40px;
   margin: 0 8px;
+  filter: invert(1);
 }
 
-/* Quem somos */
+/* Animais */
 
 .section-quemsomos{
     display: grid;
@@ -144,7 +149,7 @@ main {
 
  .card-title{
     padding: 5px;
-    color: #e737f7;
+    color: #cb6ce6;
  }
 
  .card-text{
@@ -152,14 +157,101 @@ main {
  }
 
  .btn{
-    background-color: #e390eb;
+    background-color: #cb6ce6;
     font-weight: bolder;
  }
 
   .btn:hover{
-    background-color: #cdf737;
+    background-color: #ffde59;
     font-weight: bolder;
  }
+
+ .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 4px solid #cb6ce6;
+}
+
+.card-body h5 {
+  color: #4b1c9a;
+}
+
+.card-body p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.col-md-4{
+  height: 400px;
+}
+
+#titlecard {
+  margin-top: 15px;
+}
+
+#esp{
+  margin-bottom: 40px;
+}
+
+/* Botão nos cards */
+.card .btn-outline-primary {
+  border-color: #cb6ce6;
+  color: #cb6ce6;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card .btn-outline-primary:hover {
+  background-color: #cb6ce6;
+  color: #fff;
+}
+
+
+#porque-adotar {
+  background-color: #fff;
+  border-top: 4px solid #cb6ce6;
+}
+
+#porque-adotar .card {
+  background-color: #fefaff;
+}
+
+#porque-adotar .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+}
+
+#porque-adotar .card-title {
+  color: #cb6ce6;
+}
+
+.btn{
+  width: 300px;
+  align-items: center;
+}
+
+/* Seção quem somos */
+.card-body-quemsomos{
+      padding-left: 10px;
+    background-color: rgb(252, 250, 250);
+    border-radius: 10px;
+    width: 800px;
+    margin: 20px;
+}
+
 
 @media (max-width: 768px) {
   .formulario-adocao {
@@ -179,70 +271,32 @@ main {
   .form-check.form-check-inline {
     display: block;
     margin-bottom: 10px;
-
-
-
-
-
-.card {
-  border: none;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
 }
+.card-body-quemsomos {
+    width: 90%;           /* ocupa quase toda a tela */
+    padding: 15px;        /* reduz o espaçamento interno */
+    margin: 10px auto;    /* centraliza com margens menores */
+  }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
-}
+  .section-quemsomos h2 {
+    font-size: 1.4rem;    /* títulos menores */
+    text-align: center;
+  }
 
-.card-img-top {
-  height: 240px;
-  object-fit: cover;
-  border-bottom: 4px solid #6f42c1;
-}
+  .section-quemsomos p,
+  .section-quemsomos li {
+    font-size: 0.95rem;   /* texto mais compacto */
+  }
 
-.card-body h5 {
-  color: #4b1c9a;
-}
+  .section-quemsomos ul {
+    margin-left: 15px;    /* menor recuo */
+  }
 
-.card-body p {
-  color: #777;
-  margin-bottom: 10px;
-}
-
-/* Botão nos cards */
-.card .btn-outline-primary {
-  border-color: #6f42c1;
-  color: #6f42c1;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card .btn-outline-primary:hover {
-  background-color: #6f42c1;
-  color: #fff;
-}
-
-
-#porque-adotar {
-  background-color: #fff;
-  border-top: 4px solid #6f42c1;
-}
-
-#porque-adotar .card {
-  background-color: #fefaff;
-}
-
-#porque-adotar .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
-}
-
-#porque-adotar .card-title {
-  color: #6f42c1;
-}
-
-
+  .section-quemsomos .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
   }
 }
